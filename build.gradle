@@ -9,15 +9,15 @@ buildscript {
 
     dependencies {
         if(!project.hasProperty("bootstrap")) {
-            classpath group: "me.seeber.gradle", name: "gradle-bintray-config", version: "1.0.0"
-            classpath group: "me.seeber.gradle", name: "gradle-github-config", version: "1.0.0"
-            classpath group: "me.seeber.gradle", name: "gradle-license-config", version: "1.0.0"
-            classpath group: "me.seeber.gradle", name: "gradle-plugin-publish-config", version: "1.0.0"
+            classpath group: "me.seeber.gradle", name: "gradle-bintray-config", version: "1.1.0"
+            classpath group: "me.seeber.gradle", name: "gradle-github-config", version: "1.1.0"
+            classpath group: "me.seeber.gradle", name: "gradle-license-config", version: "1.1.0"
+            classpath group: "me.seeber.gradle", name: "gradle-plugin-publish-config", version: "1.1.0"
         }
     }
 }
 
-version = "1.0.0"
+version = "1.1.0"
 group = "me.seeber.gradle"
 description = "Docker plugin"
 
@@ -58,7 +58,7 @@ else {
 
 dependencies {
     compile(group: "com.bmuschko", name: "gradle-docker-plugin", version: "3.0.4")
-    compile(group: "me.seeber.gradle", name: "gradle-project-config", version: "1.0.0")
+    compile(group: "me.seeber.gradle", name: "gradle-project-config", version: "1.1.0")
 
     if(project.hasProperty("bootstrap")) {
         compile(gradleApi())
@@ -67,8 +67,8 @@ dependencies {
         compileOnly(group: "org.eclipse.jdt", name: "org.eclipse.jdt.annotation", version: "2.0.0")
     }
     else {
-        annotations(group: "me.seeber.annotations", name: "jdk-annotations", version: "1.8.0-r.1")
-        annotations(group: "me.seeber.annotations", name: "gradle-api-annotations", version: "3.1-r.1")
+        annotations(group: "me.seeber.annotations", name: "jdk-annotations", version: "1.8.0-r.2")
+        annotations(group: "me.seeber.annotations", name: "gradle-api-annotations", version: "3.1-r.2")
     }
 }
 
