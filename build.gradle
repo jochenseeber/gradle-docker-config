@@ -46,8 +46,8 @@ else {
     apply plugin: "me.seeber.ide.eclipse"
     apply plugin: "me.seeber.project.gradle-plugin"
     apply plugin: "me.seeber.repository.github"
-    apply plugin: "me.seeber.setup.license"
-    apply plugin: "me.seeber.validation.checkstyle"
+   //  apply plugin: "me.seeber.setup.license"
+   // apply plugin: "me.seeber.validation.checkstyle"
 
     model {
         projectConfig {
