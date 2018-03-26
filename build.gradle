@@ -46,8 +46,8 @@ else {
     apply plugin: "me.seeber.ide.eclipse"
     apply plugin: "me.seeber.project.gradle-plugin"
     apply plugin: "me.seeber.repository.github"
-    apply plugin: "me.seeber.setup.license"
-    apply plugin: "me.seeber.validation.checkstyle"
+   //  apply plugin: "me.seeber.setup.license"
+   // apply plugin: "me.seeber.validation.checkstyle"
 
     model {
         projectConfig {
@@ -67,7 +67,7 @@ else {
 }
 
 dependencies {
-    compile(group: "com.bmuschko", name: "gradle-docker-plugin", version: "3.0.4")
+    compile(group: "com.bmuschko", name: "gradle-docker-plugin", version: "3.2.4")
     compile(group: "me.seeber.gradle", name: "gradle-project-config", version: "1.1.1")
 
     if(project.hasProperty("bootstrap")) {
